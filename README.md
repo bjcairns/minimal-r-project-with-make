@@ -14,7 +14,7 @@ To use this example project, on any UNIX-based system with access to the bash sh
 
 >`git clone --depth 1 https://github.com/bjcairns/minimal-r-project-with-make`
 
-(Note that `--depth 1` means that only the latest revision is cloned, not the entire history of this repository.) From your local directory you can then use GNU make to build the dummy analysis report:
+(Note that `--depth 1` means that only the latest revision is cloned, not the entire history of this repository.) From your local directory you can then use GNU make to build the dummy analysis report. At the command line, type:
 
 >`make`
 
@@ -24,7 +24,9 @@ You can also try:
 >`make test`  
 >`make report`
 
-After successful completion of `make` (or `make report`), you can find the HTML output in file `./output/report.html`. If the tests were also run (or after `make test`), test results will be in file `output/tests.txt`. (The `make clean` command deletes all contents of the `./output` directory in preparation for a fresh build of the project.)
+The `make clean` command deletes all contents of the `output` directory in preparation for a fresh build of the project. If the tests are run (on a fresh build, or after `make test`), test results will be sent to stdout and also to file `output/tests.txt`.
+ 
+After successful completion of `make` (or `make report`), you can find the HTML report in file `output/report.html` (a trivial example using the built-in timeseries dataset, `AirPassengers`). 
 
 ## License
 
@@ -36,4 +38,3 @@ However, any actual analysis project (i.e. not an example or template project li
 >`git commit -m "Delete original LICENSE as per README.md"`
 
 and continue developing your project (perhaps then adding an open source license of your own).
-
