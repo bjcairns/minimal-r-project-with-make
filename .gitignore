@@ -1,0 +1,12 @@
+## Directories and files to ignore
+## (includes some examples not found in this repository)
+output/
+test_output/
+doc/
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.*~
+*.swp
+*.png
