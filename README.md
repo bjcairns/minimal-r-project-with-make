@@ -24,7 +24,7 @@ You can also try:
 >`make test`  
 >`make report`
 
-After successful completion of `make` (or `make report`), you can find the HTML output in file `./output/report.html`. If the tests were also run (or after `make test`), test results will be in file `test_output/test.out`. (The `make clean` command deletes all contents of the `./output` and `./test_output` directories in preparation for a fresh build of the project.)
+After successful completion of `make` (or `make report`), you can find the HTML output in file `./output/report.html`. If the tests were also run (or after `make test`), test results will be in file `output/tests.txt`. (The `make clean` command deletes all contents of the `./output` directory in preparation for a fresh build of the project.)
 
 ## License
 
