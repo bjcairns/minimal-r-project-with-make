@@ -31,7 +31,7 @@ output/tests.txt : R/tests.R
 
 
 ## Generate analysis report
-output/report.html : markdown/report.Rmd
+output/report.html : md/report.Rmd
 	@echo --- Generating project report ---
 	Rscript \
 		-e "library(rmarkdown)" \
