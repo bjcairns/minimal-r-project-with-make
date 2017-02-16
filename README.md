@@ -6,7 +6,7 @@ The easiest way to get to grips with this package is to [clone the repository](h
 
 Creation of this repository was motivated by blog posts by [Karl Broman](http://kbroman.org/minimal_make/) and [Jon Zelner](http://www.jonzelner.net/statistics/make/reproducibility/2016/06/01/makefiles/) about using make and Makefiles with R, with additional inspiration on the incorporation of dummy tests from the [r-lcfd](https://github.com/sloria/r-lcfd) repository by Steven Loria.
 
-This repository contains a minimal functioning R project using `make`. More in-depth examples can be found via the blog posts linked above, or the [example-r-analysis](https://github.com/klmr/example-r-analysis) repository, by Konrad Rudolph.
+More in-depth examples of using make and Makefiles with R can be found via the blog posts linked above, or the [example-r-analysis](https://github.com/klmr/example-r-analysis) repository, by Konrad Rudolph.
 
 ## Basic usage
 
@@ -20,8 +20,8 @@ To use this example project, on any UNIX-based system with access to the bash sh
 
 You can also try:
 
->`make clean`
->`make test`
+>`make clean`  
+>`make test`  
 >`make report`
 
 After successful completion of `make` (or `make report`), you can find the HTML output in file `./output/report.html`. If the tests were also run (or after `make test`), test results will be in file `test_output/test.out`. (The `make clean` command deletes all contents of the `./output` and `./test_output` directories in preparation for a fresh build of the project.)
@@ -32,7 +32,7 @@ This work is licensed under the MIT License, meaning that you can do what you li
 
 However, any actual analysis project (i.e. not an example or template project like this one) is likely to retain only minor portions of this minimal project. In that case you could:
 
->`git rm LICENSE`
+>`git rm LICENSE`  
 >`git commit -m "Delete original LICENSE as per README.md"`
 
 and continue developing your project (perhaps then adding an open source license of your own).
