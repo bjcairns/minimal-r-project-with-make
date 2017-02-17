@@ -33,7 +33,7 @@ output/tests.txt : R/tests.R
 ## Generate analysis report
 output/report.html : md/report.Rmd
 	@echo --- Generating project report ---
-	Rscript \
+	Rscript $(R_OPTS) \
 		-e "library(rmarkdown)" \
 		-e "render('$<',output_file='$@',output_dir='$(@D)')" 
 
