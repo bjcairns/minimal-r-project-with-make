@@ -1,5 +1,4 @@
 ## Variables
-SHELL=/bin/bash
 R_OPTS=--no-save --no-restore
 
 
